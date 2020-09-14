@@ -1,6 +1,5 @@
 #!/bin/bash
-cp -u -p .env.example .env
-composer install
+composer install --no-dev
 php artisan key:generate
 php artisan migrate
 php-fpm
